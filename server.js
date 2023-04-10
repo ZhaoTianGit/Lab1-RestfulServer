@@ -6,7 +6,9 @@ app.use(express.json());
 app.listen(port, () => {
 console.log(`Example app listening on port ${port}`)
 })
-
+app.post('/',async (req, res) => {
+  res.send(req.body)
+})
 let dbUsers = [
   {
       username: "lee",
