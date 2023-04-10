@@ -1,0 +1,18 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "lee",
+    "password": "passwordlee"
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    //should be same as the res.send(register...'s name of the var) -- line 124 in index.js
+    "username": "leee",
+    "password": "passwordleee",
+    "name": "lee zhao tian2",
+    "email" :"lzt2@gmail.com"
+}
