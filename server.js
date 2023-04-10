@@ -9,26 +9,7 @@ console.log(`Example app listening on port ${port}`)
 app.post('/',async (req, res) => {
   res.send(req.body)
 })
-let dbUsers = [
-  {
-      username: "lee",
-      password: "passwordlee",
-      name: "lee zhao tian",
-      email: "lzt@gmail.com"
-  },
-  {
-      username: "hee",
-      password: "passwordhee",
-      name: "hee yee cinn",
-      email: "hyc@gmail.com"
-  },
-  {
-      username: "wee",
-      password: "passwordwee",
-      name: "wee mao phin",
-      email: "wmp@gmail.com"
-  }
-];
+let dbUsers = [];
 
 const bcrypt = require('bcrypt');
 
