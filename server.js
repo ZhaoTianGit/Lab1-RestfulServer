@@ -13,6 +13,8 @@ let dbUsers = [];
 
 const bcrypt = require('bcrypt');
 
+//  The login system after including the bcrypt function is created to 
+//  login with the encrypted password of the user
 app.post('/login',async(req,res) => {
   const {username, password} = req.body
   const matched = dbUsers.find(element => element.username === username)
@@ -29,6 +31,8 @@ app.post('/login',async(req,res) => {
   }
 });
 
+//  The register system after including the bycrypt function in order to 
+//  create a new user and encrypt the original password 
 app.post('/register',async (req, res) => {
 
   const {username, password, name, email} = req.body
