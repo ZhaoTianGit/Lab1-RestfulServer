@@ -10,8 +10,8 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "username": "leee",
-    "password": "passwordeee"
+    "username": "lee",
+    "password": "passwordlee"
 }
 ###
 POST http://localhost:3000/register
